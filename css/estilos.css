@@ -121,6 +121,11 @@ body{
     border-radius: 32px;
 }
 
+.cta:hover {
+  transform: scale(1.05); /* Aumenta un poco el tamaño */
+  box-shadow: 0 8px 15px rgba(32, 145, 249, 0.3); /* Sombra sutil */
+}
+
 /* About */
 
 .about {
@@ -210,16 +215,21 @@ overflow: hidden;
 }
 
 .info__element{
-    background-color: #e5e5f7;
+    background-color: #325494;
     text-align: center;
     border-radius: 10px;
     width: 330px;
     padding: 40px;
-    --color-plan: #696871;
-    --color-info: #1D293F;
-    --bg-cta: #fff;
-    --color-cta: #5454D4;
-    --color-items: #696871;
+    --color-plan: #000000;
+    --color-info: #121314;
+    --bg-cta: #1b1f31;
+    --color-cta: #dbdbe6;
+    --color-items: #171718;
+}
+
+.info__element:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12 24px rgba(0, 0, 0, 0.2);
 }
 
 .info__element--best{
@@ -232,6 +242,11 @@ overflow: hidden;
     --bg-cta: #9F3919;
     --color-cta: #fff;
     --color-items: #fff;
+}
+
+.info__element--best:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 14 28px rgba(255, 113, 67, 0.4);
 }
 
 .info__name{
@@ -253,13 +268,14 @@ overflow: hidden;
     font-size: 1.2rem;
     margin-bottom: 50px;
     color: var(--color-items);
+    text-align: left;
 }
 
 .info__cta{
     display: block;
     padding: 20px 0;
     border-radius: 10px;
-    text-decoration: none;
+    text-decoration: none;  
     background-color: var(--bg-cta);
     font-weight: 600;
     color: var(--color-cta);
@@ -484,6 +500,25 @@ overflow: hidden;
     width: 30px;
 }
 
+/* Whatsapp */
+
+.whatsapp{
+ width: 50px;
+  height: 50px;
+  position: fixed;     /* Hace que el ícono permanezca en pantalla al hacer scroll */
+  bottom: 45px;         /* Distancia desde el borde inferior */
+  right: 55px;           /* Distancia desde el borde izquierdo */
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;    
+  cursor: pointer;
+
+}
+
+.whatsapp:hover {
+  transform: scale(1.1); /* Aumenta un poco el tamaño */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra verde sutil */
+}
+
 /* Media Queries */
 
 @media (max-width:800px){
@@ -667,7 +702,3 @@ overflow: hidden;
         margin-left: 0;
     }
 }
-    
-
-
-    
