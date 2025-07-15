@@ -8,6 +8,26 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+   <meta name="title" content="Revista Tecno-Galanista" />
+    <meta name="description" 
+        content="Entra a esta revista, y solo con un computador y acceso a Wi-Fi podrás crear una página web totalmente gratis, haciendo uso de los lenguajes de programación de HTML, CSS, y JavaScript" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://edvalcrisdesign.github.io" />
+    <meta property="og:title" content="Revista Tecno-Galanista" />
+    <meta property="og:description" content="Entra a esta revista, y solo con un computador y acceso a Wi-Fi podrás crear una página web totalmente gratis, haciendo uso de los lenguajes de programación de HTML, CSS, y JavaScript" />
+    <meta property="og:image" content="https://edvalcridesign.github.io/images/portada.jpg" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://revista.tecno-galanista" />
+    <meta property="twitter:title" content="Revista Tecno-Galanista" />
+    <meta property="twitter:description" content="Entra a esta revista, y solo con un computador y acceso a Wi-Fi podrás crear una página web totalmente gratis, haciendo uso de los lenguajes de programación de HTML, CSS, y JavaScript" />
+    <meta property="twitter:image" content="https://edvalcrisdesign.github.io/images/portada.jpg" />
 </head>
 <body>
     
@@ -22,13 +42,13 @@
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Acerca de</a>
+                    <a href="#acerca de" class="nav__links">Acerca de</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
+                    <a href="#blog" class="nav__links">Blog</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close" alt="">
@@ -55,18 +75,18 @@
                 <article class="about__icons">
                     <img src="./images/school.svg" class="about__icon">
                     <h3 class="about__title">Entorno escolar</h3>
-                    <p class="about__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic quisquam consectetur odit.</p>
+                    <p class="about__paragraph">Un entorno creado por estudiantes para guiarte en tu proceso de construcción web.</p>
 
                 </article>
                 <article class="about__icons">
                     <img src="./images/laptop.svg" class="about__icon">
                     <h3 class="about__title">Interconexión</h3>
-                    <p class="about__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic quisquam consectetur odit.</p>
+                    <p class="about__paragraph">Desde la comodidad de tu casa o en el colegio podrás acceder a todo el contenido propuesto.</p>
 
                 </article><article class="about__icons">
                     <img src="./images/book.svg" class="about__icon">
                     <h3 class="about__title">Académico</h3>
-                    <p class="about__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic quisquam consectetur odit.</p>
+                    <p class="about__paragraph">Aprende habilidades que te ayudaran a desenvolverte en una sociedad digital.</p>
                 </article>
             </div>
         </section>
@@ -75,8 +95,8 @@
             <div class="knowledge__container container">
                 <div class="knowledge__texts">
                     <h2 class="subtitle">Guia de construcción de página web. ¡Amplía tus conocimientos con la creación de entornos digitales!</h2>
-                    <p class="knowledge__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur odit praesentium fugit hic debitis. Laborum, nisi eligendi. Placeat nihil et quidem incidunt quis quasi tenetur ipsum?</p>
-                    <a href="#" class="cta">Entra a la guía</a>
+                    <p class="knowledge__paragraph">Aprender a crear una página web es el primer paso para participar activamente en el mundo digital. Con conocimientos básicos de HTML, CSS y JavaScript, puedes desarrollar sitios que informen, eduquen o entretengan. Explora herramientas, define objetivos y da vida a tus ideas desde cero.</p>
+                    <a href="http://www.youtube.com/@REVISTATECNO-GALANISTA" class="cta" target="_blank" rel="noopener">Entra a la guía</a>
                 </div>
 
                 <figure class="knowledge__picture">
@@ -85,62 +105,63 @@
             </div>
        </section>   
        
-       <section class="info container"> 
+       <section class="info container" id="acerca de"> 
         <h2 class="subtitle">Con 3 lenguajes de programación crearás tu sitio web.</h2>
 
         <div class="info__table">
             <div class="info__element">
-                <p class="info__name">Flexbox</p>
-                <h3 class="info__info">Free</h3>
+                <p class="info__name">Estilo</p>
+                <h3 class="info__info">CSS</h3>
 
                 <div class="info__items">
-                    <p class="info__features">Flexbox</p>
-                    <p class="info__features">Layouts</p>
-                    <p class="info__features">Responsive</p>
+                    <p class="info__features">* Describe la presentación de los elementos de HTML</p>
+                    <p class="info__features">* Brinda estilo y diseño</p>
+                    <p class="info__features">* Permite visualizar efectos y animaciones</p>
                 </div>
 
-                <a href="#" class="info__cta">Empieza ahora</a>
+                <a href="https://www.youtube.com/watch?v=wZniZEbPAzk" class="info__cta" target="_blank" rel="noopener">Empieza ahora</a>
             </div>
             
-
+            
             <div class="info__element info__element--best">
-                <p class="info__name">Grid</p>
-                <h3 class="info__info">$30/mes</h3>
+                <p class="info__name">Estructura</p>
+                <h3 class="info__info">HTML</h3>
 
                 <div class="info__items">
-                    <p class="info__features">Grid</p>
-                    <p class="info__features">Implicit Grid</p>
-                    <p class="info__features">Responsive</p>
+                    <p class="info__features">* Contituye todas las páginas web</p>
+                    <p class="info__features">* Es la base de la programación de sitios web</p>
+                    <p class="info__features">* Utiliza etiquetas para organizar y presentar la información</p>
                 </div>
 
-                <a href="#" class="info__cta">Empieza ahora</a>
+                <a href="https://www.youtube.com/watch?v=MJkdaVFHrto" class="info__cta" target="_blank" rel="noopener">Empieza ahora</a>
             </div>
 
 
             <div class="info__element">
-                <p class="info__name">Animaciones</p>
-                <h3 class="info__info">$40/mes</h3>
+                <p class="info__name">Interacción</p>
+                <h3 class="info__info">JavaScript</h3>
 
                 <div class="info__items">
-                    <p class="info__features">Animation</p>
-                    <p class="info__features">Transition</p>
-                    <p class="info__features">Render Website</p>
+                    <p class="info__features">* Dinámica e Interacción</p>
+                    <p class="info__features">* Se usa para validar formularios y responder a acciones del usuario</p>
+                    <p class="info__features">* Actualizar contenido sin recargar la página</p>
                 </div>
 
-                <a href="#" class="info__cta">Empieza ahora</a>
+                <a href="https://www.youtube.com/watch?v=8GTaO9XhA5M" class="info__cta" target="_blank" rel="noopener">Empieza ahora</a>
             </div>
+            
 
 
         </div>
        </section>
 
-       <section class="testimony">
+       <section class="testimony" id="blog">
             <div class="testimony__container container">
                 <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__text">
                         <h2 class="subtitle">Mi nombre es Eduar Guerrero, <span class="testimony__course">estudiante del LCGS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consectetur et incidunt temporibus tempora accusantium cupiditate modi quo, quod quis voluptate impedit, mollitia voluptatem beatae eligendi?</p>
+                        <p class="testimony__review">Hola, ¿como estás? mi función será explicarte como el lenguaje de programación de CSS influye en la construcción de una página web. No es muy complicado, solo haz de cuenta que es como un canva pero de programación. Si implementas este lenguajes tu sitio web tendrá una gran apariencia llamando la atención de los usuarios. Si lo que quieres es aprender a estilizar virtualmente unete al curso y empieza ahora, animáte.</p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -152,7 +173,7 @@
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__text">
                         <h2 class="subtitle">Mi nombre es Valeria Tellez, <span class="testimony__course">estudiante del LCGS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit quod quis voluptate impedit exercitationem sapiente eveniet non architecto nobis.</p>
+                        <p class="testimony__review">Holaaa, espero estés muy bieeen, en este caso te voy a apoyar con el lenguaje de JavaScript. La mayoria de interacciones y dinámicas que ves en las páginas web se deben a este lenguaje, por ejemplo en el manejo de datos JavaScript puede ser aliado para controlar la información. En esta parte te explicaré como hacer que tu sitio sea interactivo y mejore la interfaz sitio-usuario, te estaré esperando, aprovecha esta gran oportunidaaad. ☺</p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -163,7 +184,7 @@
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__text">
                         <h2 class="subtitle">Mi nombre es Cristopher Ccanto, <span class="testimony__course">estudiante del LCGS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consectetur et expedita possimus esse facilis, incidunt temporibus tempora accusantium cupiditate modi.</p>
+                        <p class="testimony__review">Hola, encantado de que estés leyendo esto, en mi caso te mostraré cual es la estructura básica de una página web, que en pocas palabras es con HTML. En si este define la estructura y el contenido que albergará la página. Las imagenes, iconos, párrafos y demás elementos se pueden visualizar gracias a HTML. Al acceder a este curso te enseñaré como crear una estructura solida de HTML para construir tu web. </p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -178,7 +199,7 @@
 
        <section class="questions container">
             <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eligendi.</p>
+            <p class="questions__paragraph">En este apartado se encuentran preguntas que frecuentemente se hacen los usuarios al momento de empezar con el proceso de construcción web.</p>
 
         <section class="questions__container">
             <article class="questions__padding">
@@ -189,7 +210,8 @@
                         </span>
                     </h3>
 
-                    <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque veniam mollitia consequuntur corrupti dignissimos repudiandae nulla quis exercitationem iure, non, aut odit quam reiciendis aliquid quas perferendis fugiat asperiores ex. Sapiente in mollitia cumque necessitatibus odio, eum reprehenderit natus quaerat voluptatibus quasi placeat totam, nam est eveniet repellat accusamus adipisci. Ipsum explicabo iusto obcaecati, sed hic voluptatibus nisi cupiditate illo vero asperiores dolores cumque perspiciatis deleniti rem optio quisquam?</p>
+                    <p class="questions__show">Los lenguajes de programación son sistemas que permiten dar instrucciones a una computadora para realizar tareas específicas. En el caso de las páginas web, se utilizan tres lenguajes principales: HTML, que organiza la estructura del contenido; CSS, que se encarga del diseño y la apariencia visual; y otro lenguaje que puede ser JavaScript, que permite añadir interactividad, como respuestas a clics o validación de formularios, haciendo que la página sea dinámica y más funcional.
+</p>
                 </div>
             </article> 
             
@@ -201,7 +223,7 @@
                         </span>
                     </h3>
 
-                    <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque veniam mollitia consequuntur corrupti dignissimos repudiandae nulla quis exercitationem iure, non, aut odit quam reiciendis aliquid quas perferendis fugiat asperiores ex. Sapiente in mollitia cumque necessitatibus odio, eum reprehenderit natus quaerat voluptatibus quasi placeat totam, nam est eveniet repellat accusamus adipisci. Ipsum explicabo iusto obcaecati, sed hic voluptatibus nisi cupiditate illo vero asperiores dolores cumque perspiciatis deleniti rem optio quisquam?</p>
+                    <p class="questions__show">El tiempo que se tarda en crear un sitio web es subjetivo, ya que depende de varios factores como la temática, la estructura, los conocimientos previos y las funcionalidades que se quieran implementar. En esencia, todo varía según la cantidad y complejidad de los elementos que se deseen incluir. Además, si la página está pensada para un proyecto o un uso personal frecuente, será necesario ofrecerle soporte y mantenimiento constante para prevenir fallas y posibles ataques. En este curso podrás avanzar a tu propio ritmo, revisar el contenido cuantas veces quieras y, si lo deseas, experimentar con nuevas ideas. Recuerda: si lo puedes imaginar, lo puedes programar.</p>
                 </div>
             </article>  
             
@@ -213,14 +235,14 @@
                         </span>
                     </h3>
 
-                    <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque veniam mollitia consequuntur corrupti dignissimos repudiandae nulla quis exercitationem iure, non, aut odit quam reiciendis aliquid quas perferendis fugiat asperiores ex. Sapiente in mollitia cumque necessitatibus odio, eum reprehenderit natus quaerat voluptatibus quasi placeat totam, nam est eveniet repellat accusamus adipisci. Ipsum explicabo iusto obcaecati, sed hic voluptatibus nisi cupiditate illo vero asperiores dolores cumque perspiciatis deleniti rem optio quisquam?</p>
+                    <p class="questions__show">Para comenzar este proceso no necesitas un equipo muy avanzado ni una gran cantidad de herramientas. Solo requerirás un computador con acceso a Internet, un navegador con buen soporte para desarrollo web, como Firefox, y la plataforma de edición de código como Visual Studio Code. Este programa será tu lienzo para crear una obra visual en el mundo digital. Sin embargo, lo más importante es tener ganas de aprender y una actitud positiva. En este ámbito es completamente normal sentirse frustrado cuando algo no funciona o aparecen errores, pero recuerda que la constancia es clave para el éxito. Si algo no te sale a la primera, no te desanimes: busca nuevas formas, sé creativo y, sobre todo, no te rindas.</p>
                 </div>
             </article>  
         </section>
 
         <section class="questions__offer">
-            <h2 class="subtitle">¿Estas preparado para crear tu entorno digital?</h2>
-            <p class="questions__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, sapiente nisi? Ab ad a repudiandae veniam deleniti adipisci incidunt. Fugiat sapiente iure officiis quas odit asperiores rem quia vero aut eos incidunt veritatis ab suscipit quis provident, eligendi iste dolore.</p>
+                <h2 class="subtitle">¿Estas preparado para crear tu entorno digital?</h2>
+                <p class="questions__copy">Habiendo leído todo esto, ya conoces lo que vas a ver y necesitar para estos tutoriales, nuestro objetivo es que te sumergas en una sociedad digital actual y, empieces a conocer conceptos que te pueden servir no solo para enriquecer tu conocimiento, sino también, que lo puedas implementar en aspectos de tu vida.</p>
             <a href="#" class="cta">Aprende ahora</a>
             </section>
         </section>
@@ -260,9 +282,9 @@
 
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="/images/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="/images/ig.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="/images/youtube.svg" class="footer__img"></a>
+                <a href="https://www.facebook.com/profile.php?id=61578035056088" class="footer__icons" target="_blank" rel="noopener"><img src="/images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/tecno_galan_cev/" class="footer__icons" target="_blank" rel="noopener"><img src="/images/ig.svg" class="footer__img"></a>
+                <a href="http://www.youtube.com/@REVISTATECNO-GALANISTA" class="footer__icons" target="_blank" rel="noopener"><img src="/images/youtube.svg" class="footer__img"></a>
             </div>
 
             <h3 class="footer__copyright">Derechos reservados &copy; Eduar Guerrero, Valeria Tellez, Cristopher Ccanto</h3>
@@ -272,5 +294,9 @@
     <script src="./js/slider.js"></script>    
     <script src="./js/questions.js"></script>    
     <script src="./js/menu.js"></script>
+
+    <section class="whatsapp">
+    <a href="https://wa.me/573116490472" target="_blank" rel="noopener"> <img src="images/whatsapp.png">
+    </a>
 </body>
 </html>
